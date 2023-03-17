@@ -1,0 +1,425 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: rgb(20,20,20);
+}
+
+
+.head {
+    text-align: center;
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.head h1 {
+    letter-spacing: 0.2em;
+    font-family: 'Righteous', cursive;
+    font-size: 20vw;
+    color: rgba(0,200,255,0.8);
+    text-transform: uppercase;
+}
+
+.info {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.info h2 {
+    font-size: 5vw;
+    font-family: 'Righteous', cursive;
+    color: rgba(0,200,255,0.8);
+    letter-spacing: 0.6vw;
+}
+
+@keyframes blink {
+    0% {
+        border: 4px solid rgba(0,200,255,0.333);
+    }
+
+    50% {
+        border: 4px solid rgb(0,200,255);
+    }
+
+    100% {
+        border: 4px solid rgb(0,200,255,0.333);
+    }
+}
+
+.cta {
+    margin-top: 5%;
+    background: transparent;
+    width: 300px;
+    height: 60px;
+    font-family: 'Righteous', cursive;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 4px solid rgba(0,200,255,0.333);
+    border-radius: 50px;
+    transition: 0.2s;
+    color: rgb(0,200,255);
+    animation: blink 2s infinite;
+}
+
+.cta a {
+    text-decoration: none;
+    color: rgb(0,200,255)
+}
+
+.cta:hover {
+    width: 350px;
+    border: 4px solid rgb(0,200,255);
+}
+
+h4 {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+    align-self: baseline;
+}
+
+
+.checklist li {
+    padding: 60px 40px;
+}
+
+.display {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    background: rgb(25,25,25);
+    border-bottom: 2px solid rgb(150,150,150);
+    max-width: 80%;
+    height: 5vw;
+    display: flex;
+    justify-content: center;
+    padding: 2vh 2vw;
+    overflow: hidden;
+    align-items:last baseline
+}
+
+.row h5 {
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1vw;
+    margin-right: 15vw;
+    width: 15vw;
+}
+
+.row .view{
+    justify-self: left;
+    color: #fff;
+    font-family: 'Righteous',cursive;
+    width: 20vw;
+    height: 3vw;
+    background: rgba(0,200,255,0.5);
+    border: none;
+    font-size: 1vw;
+    margin-right: 1vw;
+    transition: 0.2s;
+}
+
+.row .status{
+    justify-self: right;
+    width: 20vw;
+    height: 3vw;
+    background: rgba(0,255,50,0.4);
+    font-family: 'Righteous',cursive;
+    font-size: 1vw;
+    border: none;
+    color: #fff;
+}
+
+.row .view:hover {
+    background-color: rgb(0,200,255);
+}
+
+#nearly {
+    background-color: rgba(255, 255, 28, 0.7);
+}
+
+
+footer {
+    max-width: 100%;
+    height: 20vh;
+    background: rgb(10,10,10);
+    display: flex;
+    gap: 5vw;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-areas: 'feed' 'customer' 'name';
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer a {
+    color: #fff;
+    width: 20vw;
+    height: 5vh;
+    margin-top: 5vh;
+    text-decoration: none;
+    text-align: center;
+    padding: 2vh 3vw;
+}
+
+footer a:hover {
+    color: rgba(0,200,255,0.5);
+}
+
+.feedback {
+    grid-area: 'feed';
+}
+
+.customer {
+    grid-area: 'customer';
+}
+
+.name {
+    width: 20vw;
+    height: 5vh;
+    color: rgb(200,200,200);
+    font-family: 'Righteous', cursive;
+    grid-area: 'name';
+    margin-top: 5vh;
+    letter-spacing: 1vw;
+}
+
+/*Pricing page*/ 
+
+.sheet {
+    display: flex;
+    justify-content: center;
+    height: 60vh;
+    width: 100%;
+    gap: 15vw;
+    margin-top: 5vh;
+}
+
+.card {
+    display: flex;
+    gap: 5vh;
+    flex-direction: column;
+    background: rgb(25,25,25);
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 20vw;
+    height: 100%;
+    padding: 5vh 5vw;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.card p {
+    text-align: center;
+    align-self: center;
+}
+
+.card h2 {
+    text-align: center;
+}
+
+.card h3 {
+    text-align: center;
+}
+
+.select {
+    background: transparent;
+    border: 4px solid rgba(0,200,255,0.5);
+    border-radius: 50px;
+    color: rgb(0,200,255);
+    font-family: 'Righteous', cursive;
+    width: 100%;
+    height: 8vh;
+    letter-spacing: 0.1vw;
+    transition: 0.2s;
+}
+
+.select:hover {
+    border: 4px solid rgb(0,200,255);
+}
+
+.return-area {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15vh;
+}
+
+.return {
+    width: 300px;
+    height: 60px;
+    border: 4px solid rgba(0,200,255,0.3);
+    color: rgb(0,200,255);
+    font-family: 'Righteous', cursive;
+    background: transparent;
+    border-radius: 50px;
+    transition: 0.2s;
+}
+
+.return:hover {
+    border: 4px solid rgb(0,200,255);
+    width: 350px;
+}
+
+.welcome {
+    font-size: 4em;
+    font-family: 'Righteous', cursive;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-funcs {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+}
+
+.add-employee {
+    width: 300px;
+    height: 45px;
+    background: rgba(0,200,255,0.5);
+    border: none;
+    color: #fff;
+    font-family: 'Righteous', cursive;
+    letter-spacing: 0.1vw;
+}
+
+.announcement {
+    width: 300px;
+    height: 45px;
+    background: rgba(20,255,0,0.5);
+    border: none;
+    color: #fff;
+    font-family: 'Righteous',cursive;
+    letter-spacing: 0.1vw;
+}
+
+.new-note {
+    width: 300px;
+    height: 45px;
+    background: rgba(0,200,255,0.5);
+    border: none;
+    color: #fff;
+    font-family: 'Righteous',cursive;
+    letter-spacing: 0.1vw;  
+}
+
+
+.employees {
+    width: 60vw;
+    height: 70vh;
+    overflow: scroll;
+    background: #000;
+}
+
+::-webkit-scrollbar {
+    background-color: rgb(20,20,20);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0,200,255,0.3);
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0,200,255,0.8);
+}
+
+/*Big screens*/
+@media screen and (min-width: 2000px) {
+    .cta {
+        width: 30vw;
+        height: 160px;
+        font-size: 2em;
+        border: 20px solid rgba(0,200,255,0.3);
+        border-radius: 80px;
+    }
+
+
+}
+
+@media screen and (max-width: 1090px) {
+    .sheet {
+        margin-top: 40vh;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        height: 80vh;
+        justify-content: center;
+        gap: 5vh;
+    }
+
+    .row {
+        width: 90%;
+        display: grid;
+        grid-template-rows: 6vw 6vw 6vw;
+        grid-template-columns: 8vh 8vh 8vh;
+        grid-template-areas: 'head head head' 'button1 button1 button1' 'button2 button2 button2' ;
+        height: 20vh;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 2vh;
+    }
+
+    .row h5 {
+        width: 100%;
+        align-self: center;
+        font-size: 3em;
+        grid-area: head;
+    }
+
+    .row .view {
+        font-size: 2em;
+        width: 100%;
+        height: 4vh;
+        align-self: center;
+        grid-area: button1;
+    }
+
+    .row .status {
+        font-size: 2em;
+        width: 100%;
+        height: 4vh;
+        justify-self: center;
+        grid-area: button2;
+    }
+
+
+
+}
+
